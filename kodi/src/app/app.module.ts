@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from "@angular/router"
 import { AppComponent } from './app.component';
 
+import { AppRoutingModule } from './app-routing.module';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -13,16 +14,22 @@ import { MatTabsModule } from '@angular/material/tabs';
 
 import { HttpClientModule } from "@angular/common/http";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LoginComponent } from './auth/login/login.component';
 
-
-const appRoutes: Routes = [];
+const appRoutes: Routes = [
+    {path: 'login', component: LoginComponent},
+    {path: '', redirectTo: 'login', pathMatch: 'full'},
+    {path: '**', redirectTo: 'login'}
+];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     MatButtonModule,
     MatIconModule,
     MatToolbarModule,
