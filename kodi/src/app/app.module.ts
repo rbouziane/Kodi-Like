@@ -12,6 +12,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatTabsModule } from '@angular/material/tabs';
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 import { HttpClientModule } from "@angular/common/http";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './auth/login/login.component';
@@ -30,6 +32,7 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
     MatButtonModule,
     MatIconModule,
     MatToolbarModule,
@@ -38,9 +41,10 @@ const appRoutes: Routes = [
     MatInputModule,
     MatTabsModule,
     MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
-    RouterModule.forRoot(appRoutes),
-    BrowserAnimationsModule
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
