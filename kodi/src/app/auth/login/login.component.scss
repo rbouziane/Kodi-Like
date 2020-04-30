@@ -1,6 +1,14 @@
 .login-card {
-  max-width: 500px;
+  max-width: 600px;
 }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 .div-full {
   margin: 0 auto;
   margin-top: 5vh;
@@ -8,7 +16,7 @@
   max-width: 600px;
   display: grid;
 }
-.conection {
+.connection {
   margin: 0 auto;
   background:#5AAC44
 }
@@ -20,7 +28,7 @@
 
 .titre {
   text-align: center;
-  background:#062c3f;
+  background:#11b1e7;
   color: white;
 }
 

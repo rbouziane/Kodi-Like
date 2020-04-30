@@ -4,44 +4,44 @@ import { NgForm, FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { AuthService } from '../../services/auth.service'
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  selector: 'app-register',
+  templateUrl: './register.component.html',
+  styleUrls: ['./register.component.scss']
 })
-export class LoginComponent implements OnInit {
+export class RegisterComponent implements OnInit {
 
-  loginForm: FormGroup;
+  registerForm: FormGroup;
   errorMessage: string;
 
   constructor(private router: Router,
               private authService: AuthService,
-              private formBuilder: FormBuilder) {}
+              private formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
     this.initForm();
   }
 
   initForm() {
-    this.loginForm = this.formBuilder.group({
+    this.registerForm = this.formBuilder.group({
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.pattern(/[0-9a-zA-Z]{6,}/)]]
     })
   }
 
-  register() {
-      this.router.navigate(['register']);
-  }
-
   onSubmit(form: NgForm) {
     const email = form.value['email'];
     const password = form.value['password'];
-    this.authService.signInUser(email, password).then(
+    this.authService.createNewUser(email, password).then(
       () => {
-        this.router.navigate(['home']);
+        this.router.navigate(['login']);
       },
       (error) =>{
        this.errorMessage = error;
       }
     )
+  }
+
+  login() {
+      this.router.navigate(['login']);
   }
 }

@@ -1,0 +1,41 @@
+.div-full {
+  margin: 0 auto;
+  margin-top: 5vh;
+  transform: translateY(5%);
+  max-width: 650px;
+  display: grid;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.separator {
+  text-align: center;
+  font-size: 12px;
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+
+.titre {
+  text-align: center;
+  background:#062c3f;
+  color: white;
+}
+
+.oauth-button-linkedin {
+  text-align: center;
+}
+
+.form-group {
+  text-align: center;
+}
+
+.btn {
+  width: 110px;
+  height: 35px;
+  margin-left: 10px;
+}
