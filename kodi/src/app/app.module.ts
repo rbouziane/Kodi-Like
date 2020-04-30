@@ -23,8 +23,8 @@ import { MoviesComponent } from './pages/movies/movies.component';
 import { MusicComponent } from './pages/music/music.component';
 
 const appRoutes: Routes = [
-    {path: 'login', component: LoginComponent},
-    {path: 'register', component: RegisterComponent},
+    {path: 'login', component: LoginComponent, data: {animation: 'isRight'}},
+    {path: 'register', component: RegisterComponent , data: {animation: 'isLeft'}},
     {path: 'home', component: HomeComponent, children: [
       {path: 'movies', component: MoviesComponent},
       {path: 'music', component: MusicComponent},

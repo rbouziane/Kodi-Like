@@ -13,7 +13,13 @@
       <a class="oauth-button-linkedin">
         <button class="btn btn-success" type="submit" [disabled]="f.invalid">Se connecter</button>
         <button routerLink="/register" class="btn btn-danger" (click)="register()">S'inscrire</button>
+        <button class="btn btn-default" (click)="google()">
+          <img class="center" src="assets/images/google.png">
+        </button>
       </a>
+      <li class="infos">
+        <a href="*">Vous n'arriver pas à vous connecter ?</a>
+      </li>
     </form>
   </mat-card>
 </div>

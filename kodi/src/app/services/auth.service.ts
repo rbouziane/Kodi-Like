@@ -1,12 +1,16 @@
 import { Injectable } from '@angular/core';
-import * as firebase from 'firebase'
+import * as firebase from 'firebase';
+import { auth } from  'firebase/app';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
-
   constructor() { }
+
+  async sendPasswordResetEmail(passwordResetEmail: string) {
+   return await firebase.auth().sendPasswordResetEmail(passwordResetEmail);
+  }
 
   createNewUser(email: string, password: string) {
     return new Promise(
@@ -23,6 +27,10 @@ export class AuthService {
     )
   }
 
+async  loginWithGoogle(){
+    await  firebase.auth().signInWithPopup(new auth.GoogleAuthProvider())
+}
+
   signInUser(email: string, password: string) {
     return new Promise(
       (resolve, reject) => {
@@ -34,6 +42,7 @@ export class AuthService {
             reject(error);
           }
         )
+
       }
     )
   }
