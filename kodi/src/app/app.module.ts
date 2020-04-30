@@ -19,11 +19,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { HomeComponent } from './home/home.component';
+import { MoviesComponent } from './pages/movies/movies.component';
+import { MusicComponent } from './pages/music/music.component';
 
 const appRoutes: Routes = [
     {path: 'login', component: LoginComponent},
     {path: 'register', component: RegisterComponent},
-    {path: 'home', component: HomeComponent},
+    {path: 'home', component: HomeComponent, children: [
+      {path: 'movies', component: MoviesComponent},
+      {path: 'music', component: MusicComponent},
+    ]},
     {path: '', redirectTo: 'login', pathMatch: 'full'},
     {path: '**', redirectTo: 'login'}
 ];
@@ -33,7 +38,9 @@ const appRoutes: Routes = [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    HomeComponent
+    HomeComponent,
+    MoviesComponent,
+    MusicComponent
   ],
   imports: [
     BrowserModule,
