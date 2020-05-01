@@ -21,9 +21,13 @@ import { RegisterComponent } from './auth/register/register.component';
 import { HomeComponent } from './home/home.component';
 import { MoviesComponent } from './pages/movies/movies.component';
 import { MusicComponent } from './pages/music/music.component';
+import { ResetpasswordComponent } from './auth/resetpassword/resetpassword.component';
+import { NewpasswordComponent } from './auth/newpassword/newpassword.component';
 
 const appRoutes: Routes = [
     {path: 'login', component: LoginComponent, data: {animation: 'isRight'}},
+    {path: 'resetpassword', component: ResetpasswordComponent},
+    {path: 'newpassword/:email', component: NewpasswordComponent},
     {path: 'register', component: RegisterComponent , data: {animation: 'isLeft'}},
     {path: 'home', component: HomeComponent, children: [
       {path: 'movies', component: MoviesComponent},
@@ -40,7 +44,9 @@ const appRoutes: Routes = [
     RegisterComponent,
     HomeComponent,
     MoviesComponent,
-    MusicComponent
+    MusicComponent,
+    ResetpasswordComponent,
+    NewpasswordComponent
   ],
   imports: [
     BrowserModule,

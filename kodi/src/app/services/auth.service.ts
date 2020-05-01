@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
 import * as firebase from 'firebase';
 import { auth } from  'firebase/app';
+import {Router} from "@angular/router";
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
-  constructor() { }
+  constructor(private router: Router) { }
 
   async sendPasswordResetEmail(passwordResetEmail: string) {
    return await firebase.auth().sendPasswordResetEmail(passwordResetEmail);
