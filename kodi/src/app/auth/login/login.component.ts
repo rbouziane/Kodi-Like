@@ -31,6 +31,9 @@ export class LoginComponent implements OnInit {
   register() {
       this.router.navigate(['register']);
   }
+  resetpassword() {
+    this.router.navigate(['resetpassword']);
+  }
 
   onSubmit(form: NgForm) {
     const email = form.value['email'];
