@@ -3,6 +3,13 @@
   height: 100%;
 }
 
+.image {
+  display: block;
+  margin-left: 20%;
+  margin-top: 5%;
+  width: 50%;
+}
+
 .page-content-container {
   padding: 50px;
 }
@@ -18,6 +25,7 @@
 }
 
 .list-item {
+  text-decoration: none;
   display: flex;
   align-items: center;
   position: relative;

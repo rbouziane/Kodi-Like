@@ -19,8 +19,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { HomeComponent } from './home/home.component';
-import { MoviesComponent } from './pages/movies/movies.component';
-import { MusicComponent } from './pages/music/music.component';
+import { MoviesComponent } from './home/pages/movies/movies.component';
+import { MusicComponent } from './home/pages/music/music.component';
+import { TVshowsComponent } from './home/pages/tvshows/tvshows.component';
 
 const appRoutes: Routes = [
     {path: 'login', component: LoginComponent, data: {animation: 'isRight'}},
@@ -28,6 +29,7 @@ const appRoutes: Routes = [
     {path: 'home', component: HomeComponent, children: [
       {path: 'movies', component: MoviesComponent},
       {path: 'music', component: MusicComponent},
+      {path: 'tvshows', component: TVshowsComponent},
     ]},
     {path: '', redirectTo: 'login', pathMatch: 'full'},
     {path: '**', redirectTo: 'login'}
@@ -40,7 +42,8 @@ const appRoutes: Routes = [
     RegisterComponent,
     HomeComponent,
     MoviesComponent,
-    MusicComponent
+    MusicComponent,
+    TVshowsComponent
   ],
   imports: [
     BrowserModule,
