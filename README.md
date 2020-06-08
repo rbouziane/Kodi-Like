@@ -7,3 +7,15 @@ L'application permet de centraliser des multimedias présent sur notre ordinateu
 <p align="center">
       <img width="40%" height="40%" src="/img/Kodi-Add-TVshows.png">
 </p>
+
+<p align="center">
+      <img width="40%" height="40%" src="/img/Kodi-Show.png">
+</p>
+
+<p align="center">
+      <img width="40%" height="40%" src="/img/Kodi-TheMandalorian.png">
+</p>
+
+<p align="center">
+      <img width="40%" height="40%" src="/img/Kodi-Videothemandalorian.png">
+</p>
