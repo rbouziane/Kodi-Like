@@ -9,7 +9,7 @@ L'application permet de centraliser des multimedias présent sur notre ordinateu
 </p>
 
 <p align="center">
-      <img width="40%" height="40%" src="/img/Kodi-Show.png">
+      <img width="40%" height="40%" src="/img/Kodi-Show.PNG">
 </p>
 
 <p align="center">
