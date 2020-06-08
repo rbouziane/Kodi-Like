@@ -7,9 +7,7 @@ L'application permet de centraliser des multimedias présent sur notre ordinateu
 <p style="text-align: center"> Ajoue de la série The Mandalorian à la bibliothec </p>
 
 <p align="center">
-      
-      <img width="60%" height="60%" src="/img/Kodi-Add-TVshows.png">
-      
+  <img width="60%" height="60%" src="/img/Kodi-Add-TVshows.png">
 </p>
 <p style="text-align: center"> Selection de la série dans liste de série </p>
 <p align="center">
