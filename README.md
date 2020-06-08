@@ -1,2 +1,2 @@
-# Project2EndOfYear
+# Kodi Like
 Epitech Project End Of The Year 2
