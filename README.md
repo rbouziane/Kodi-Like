@@ -13,7 +13,7 @@ L'application permet de centraliser des multimedias présent sur notre ordinateu
 </p>
 
 <p align="center">
-      <img width="40%" height="40%" src="/img/Kodi-TheMandalorian.PNG">
+      <img width="60%" height="60%" src="/img/Kodi-TheMandalorian.PNG">
 </p>
 
 <p align="center">
