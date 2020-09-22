@@ -11,7 +11,7 @@ L'application permet de centraliser des multimedias présent sur notre ordinateu
 
 <p style="text-align: center"> Séléction de la série dans liste des séries :</p>
 <p align="center">
-  <img width="60%" height="60%" src="/img/Kodi-Show.PNG">
+  <img width="60%" height="60%" src="/img/new_kodi.PNG">
 </p>
 
 <p style="text-align: center"> Choix de l'épisode à regarder ou lire la playlist :</p>
